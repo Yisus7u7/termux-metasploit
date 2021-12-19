@@ -1,0 +1,25 @@
+control:
+    Package: metasploit-framework
+    Version: 6.1.20
+    debian_revision: 6.1.20-dev-git
+    Architecture: all
+    Installed-Size: 153100
+    Maintainer: Yisus7u7 <jesuspixel5@gmail.com>
+    Depends: python, autoconf, patchelf, bison, clang, coreutils, curl, findutils, apr, apr-util, postgresql, openssl, readline, libffi, libgmp, libpcap, libsqlite, libgrpc, libtool, libxml2, libxslt, ncurses, make, ncurses-utils, ncurses, git, wget, unzip, zip, tar, termux-tools, termux-elf-cleaner, pkg-config, git, ruby, libcap, resolv-conf, build-essential
+    Suggests: openjdk-17
+    Homepage: https://github.com/Yisus7u7/termux-metasploit
+    Description: |-
+        Advanced open-source platform for developing, testing and using exploit code. (git-release installer)
+
+installation_prefix: /data/data/com.termux/files/usr
+control_files_dir: termux_package_steps
+
+data_files:
+    share/doc/metasploit:
+         source: msf-license
+
+    bin/metasploit-installer.sh:
+         source: metasploit-installer.sh
+         
+    bin/msfconsole:
+         source: msfconsole.sh
